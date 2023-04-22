@@ -49,9 +49,13 @@ root = Tk ()
 root.geometry("450x150")
 root.title("Multiple Line Text")
 
-# Create buttons
-multiple_line_text_button = Button(root, text= "MULTIPLE LINE TEXT", bg="yellow")
-close_button = Button(root, text= "CLOSE", fg= "white", bg= "red")
+# Define a function
+def multiple_text_open ():
+    os.startfile("mylife.txt")
+
+# Create buttons and commands
+multiple_line_text_button = Button(root, text= "MULTIPLE LINE TEXT", bg="yellow", command= multiple_text_open)
+close_button = Button(root, text= "CLOSE", fg= "white", bg= "red", command= root.destroy)
 
 # Create a label in window
 label_window = Label(root, text= "Click here!", fg="black", justify=CENTER, font=("Arial", 14, "bold"))
