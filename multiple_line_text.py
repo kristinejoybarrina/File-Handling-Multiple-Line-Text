@@ -12,9 +12,12 @@ while response_loop_ctrl == 0:
 
 # Ask the user for input
     user_input = str (input ("Enter a line of text: "))
-    print ("its working")
 
 # Create and open a file named mylife.txt
+    with open ("mylife.txt", "a") as multiple_text:
+        print ("its working")
+        
+
 # Ask the user if he/she wants add another line
 # Display error message if the input is more than 1 character
 # Design the output using tkinter
