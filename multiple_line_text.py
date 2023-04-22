@@ -50,7 +50,8 @@ root.geometry("450x150")
 root.title("Multiple Line Text")
 
 # Create buttons
-multiple_line_text_button = Button (root, text= "MULTIPLE LINE TEXT", bg="yellow")
+multiple_line_text_button = Button(root, text= "MULTIPLE LINE TEXT", bg="yellow")
+close_button = Button(root, text= "CLOSE", fg= "white", bg= "red")
 
 # Create a label in window
 label_window = Label(root, text= "Click here!", fg="black", justify=CENTER, font=("Arial", 14, "bold"))
@@ -58,6 +59,7 @@ label_window = Label(root, text= "Click here!", fg="black", justify=CENTER, font
 # Let the pack method declares the position attributes
 label_window.pack (fill="both")
 multiple_line_text_button.pack ()
+close_button.pack (side="bottom")
 
 tk.mainloop()
 
