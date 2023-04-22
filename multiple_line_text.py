@@ -6,6 +6,7 @@
 # Import python modules
 import tkinter as tk
 from tkinter import *
+import os
 
 # Initialize loop control
 response_loop_ctrl = 0
@@ -48,11 +49,15 @@ root = Tk ()
 root.geometry("450x150")
 root.title("Multiple Line Text")
 
+# Create buttons
+multiple_line_text_button = Button (root, text= "MULTIPLE LINE TEXT", bg="yellow")
+
 # Create a label in window
 label_window = Label(root, text= "Click here!", fg="black", justify=CENTER, font=("Arial", 14, "bold"))
 
 # Let the pack method declares the position attributes
 label_window.pack (fill="both")
+multiple_line_text_button.pack ()
 
 tk.mainloop()
 
