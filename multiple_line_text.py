@@ -21,7 +21,21 @@ while response_loop_ctrl == 0:
 
         # Ask the user if he/she wants add another line
         user_response = str(input("Do you want to enter another line y/n? "))
-        response_loop_ctrl = 0
+        
+        # Display error message if the input is more than 1 character
+        if len(user_response) == 1:
+            response_loop_ctrl = 0
+            
+            if user_response == "y":
+                response_loop_ctrl = 0
+            
+            else:
+                response_loop_ctrl = 1
+                
+        else:
+            response_loop_ctrl = 0
+            print ('Enter only one letter! "y/n/" \n')
 
-# Display error message if the input is more than 1 character
+
+
 # Design the output using tkinter
