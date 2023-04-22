@@ -3,6 +3,10 @@
 
 # Pseudocode
 
+# Import python modules
+import tkinter as tk
+from tkinter import *
+
 # Initialize loop control
 response_loop_ctrl = 0
 
@@ -36,6 +40,10 @@ while response_loop_ctrl == 0:
             response_loop_ctrl = 0
             print ('Enter only one letter! "y/n/" \n')
 
-
-
 # Design the output using tkinter
+# Create an instance window
+root = Tk ()
+
+
+
+
