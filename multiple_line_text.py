@@ -48,6 +48,11 @@ root = Tk ()
 root.geometry("450x150")
 root.title("Multiple Line Text")
 
+# Create a label in window
+label_window = Label(root, text= "Click here!", fg="black", justify=CENTER, font=("Arial", 14, "bold"))
+
+# Let the pack method declares the position attributes
+label_window.pack (fill="both")
 
 tk.mainloop()
 
