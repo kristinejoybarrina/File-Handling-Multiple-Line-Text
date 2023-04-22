@@ -44,6 +44,11 @@ while response_loop_ctrl == 0:
 # Create an instance window
 root = Tk ()
 
+# Create the dimension of window
+root.geometry("450x150")
+root.title("Multiple Line Text")
 
+
+tk.mainloop()
 
 
