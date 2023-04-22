@@ -8,10 +8,12 @@ response_loop_ctrl = 0
 
 # Use while loop
 while response_loop_ctrl == 0:
-    print ("its working")
     response_loop_ctrl += 1
 
 # Ask the user for input
+    user_input = str (input ("Enter a line of text: "))
+    print ("its working")
+
 # Create and open a file named mylife.txt
 # Ask the user if he/she wants add another line
 # Display error message if the input is more than 1 character
